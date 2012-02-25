@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ja" xml:lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../style/common.css" />
+        <script type="text/javascript" src="../javascript/include.js"></script>
+
+        <title>Javascript enabled</title>
+    </head>
+    <body class="frontmatter" epub:type="frontmatter">
+        
+        <section class="preface" epub:type="preface">
+            <h1 id="contentIndex_id_1">Javascript enabled?</h1>
+
+<div class="test">
+<h2 id="contentIndex_id_2">Hello javascript World</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_4">code</h3>
+<pre>document.getElementById(&quot;r1&quot;).innerHTML = &quot;Hello JavaScript World&quot;;</pre>
+</div><!-- /code -->
+
+<div class="result">
+<h3 id="contentIndex_id_5">result</h3>
+<div id="r1">Goodby JavaScript World</div>
+<script type="text/javascript">
+//<![CDATA[
+	document.getElementById("r1").innerHTML = "Hello JavaScript World";
+//]]>
+</script>
+</div><!-- /result -->
+</div><!-- /test -->
+
+
+<div class="test">
+<h2 id="contentIndex_id_3">noscript</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_6">code</h3>
+<pre>&lt;noscript&gt;noscript text&lt;/noscript&gt;</pre>
+</div><!-- /code -->
+
+<div class="result">
+<h3 id="contentIndex_id_7">result</h3>
+<noscript>noscript text</noscript>
+</div><!-- /result -->
+
+</div><!-- /test -->
+
+<div class="test">
+<h2 id="contentIndex_id_8">load javascript file</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_9">code</h3>
+<h4>head</h4>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;../javascript/include.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>include.js</h4>
+<pre>var jsLoading = true;</pre>
+
+<h4>test code</h4>
+<pre>document.getElementById(&quot;r2&quot;).innerHTML = (typeof jsLoading &amp;&amp; jsLoading === true) ? 
+	&quot;loaded include.js&quot; : &quot;unload include.js&quot; ;</pre>
+</div><!-- /code -->
+
+<div class="result">
+<h3 id="contentIndex_id_10">result</h3>
+<div id="r2">Goodby JavaScript World</div>
+<script type="text/javascript">
+//<![CDATA[
+	document.getElementById("r2").innerHTML = (typeof jsLoading && jsLoading === true) ?
+		 "loaded include.js" : "unload include.js" ;
+//]]>
+</script>
+
+</div><!-- /result -->
+</div><!-- /test -->
+
+        </section>
+        
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ja" xml:lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../style/common.css" />
+
+        <title>Other Objects</title>
+    </head>
+    <body class="frontmatter" epub:type="frontmatter">
+        
+        <section class="preface" epub:type="preface">
+            <h1 id="contentIndex_id_1">Other Objects</h1>
+
+<div class="test">
+<h2 id="contentIndex_id_2">Date</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_4">code</h3>
+<pre>document.getElementById(&quot;r1&quot;).innerHTML = new Date() ;</pre>
+</div><!-- /code -->
+
+
+<div class="result">
+<h3 id="contentIndex_id_5">result</h3>
+<div id="r1"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+function testNavigatorObject01(){
+	document.getElementById("r1").innerHTML = new Date() ;
+}
+//]]>
+</script>
+
+</div><!-- /result -->
+</div><!-- /test -->
+
+<div class="test">
+<h2 id="contentIndex_id_8">Math</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_9">code</h3>
+<pre></pre>
+</div><!-- /code -->
+
+
+<div class="result">
+<h3 id="contentIndex_id_10">result</h3>
+<div id="r2"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+
+</div><!-- /result -->
+</div><!-- /test -->
+
+<div class="test">
+<h2 id="contentIndex_id_3">String</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_6">code</h3>
+<pre></pre>
+</div><!-- /code -->
+
+<div class="result">
+<h3 id="contentIndex_id_7">result</h3>
+<div id="r3"></div>
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+</div><!-- /result -->
+</div><!-- /test -->
+
+        </section>
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.onload = function(){
+	testNavigatorObject01();
+}
+//]]>
+</script>        
+    </body>
+</html>

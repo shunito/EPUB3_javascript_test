@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+}
+body {
+	line-height:1;
+	padding:1em;
+	
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/*
+Epub3 javascript Test
+CSS v0.1
+2012-02-22
+Shunsuke Ito
+*/
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+
+h1, h2, h3, h4, p {
+	margin-bottom:1em;
+}
+
+h1 {
+	border-bottom:2px solid #CCC;
+	padding: 0.3em 0;
+}
+
+h2 {
+	border-bottom:1px solid #DDD;
+	border-left: 6px solid #EEE;
+	padding: 0.3em;
+}
+
+
+section.titlepage {
+	text-align:center;
+	margin:10em;
+}
+
+.test {
+	margin-bottom:2em;
+}
+
+.code,
+.result {
+	margin:1em;
+}
+
+.result div{
+	padding:1em;
+	background-color:#EEE;
+}
+
+
+.code pre {
+	margin:0.5em;
+	padding:1em;
+	color:#FFF;
+	background-color:#333;
+}
+
+table.objects {
+	border:1px solid #666;
+	width:100%;
+}
+
+table.objects col.title { width: 20%; }
+table.objects col.type { width: 15%; }
+table.objects col.note { width: auto; }
+
+table.objects td,
+table.objects th{
+	border:1px solid #CCC;
+	padding:0.5em;
+	text-align: left;
+	word-break: break-all;
+}
+
+table.objects th{
+	background-color: #DDD;
+}
+
+table.objects td{
+	background-color: #FFF;
+}

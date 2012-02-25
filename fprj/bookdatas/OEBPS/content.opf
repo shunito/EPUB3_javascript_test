@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="3.0" xml:lang="ja">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="BookID">urn:uuid:38426d23-d015-4fe0-bac3-14c5a3c127d4</dc:identifier>
+    <meta refines="#BookID" property="identifier-type">uuid</meta>
+    <dc:title id="title0">EPUB3 Javascript Test</dc:title>
+    <dc:language id="language0">ja</dc:language>
+    <dc:creator id="creator0">Shunsuke Ito</dc:creator>
+    <meta refines="#creator0" property="role">aut</meta>
+    <dc:contributor id="contributor0">株式会社フューズネットワーク</dc:contributor>
+    <meta refines="#contributor0" property="role">bkp</meta>
+    <dc:description id="description0">EPUB3 Javascript Test</dc:description>
+    <dc:rights id="rights0">Shunsuke Ito</dc:rights>
+    <meta name="FUSEe" content="0.1.0 beta Build 10" />
+    <meta property="dcterms:modified">2012-02-24T09:00:00Z</meta>
+  </metadata>
+  <manifest>
+    <item id="nav" href="text/navigation.xhtml" media-type="application/xhtml+xml" properties="nav" />
+    <item id="text.titlepage.xhtml" href="text/titlepage.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.hellojsworld.xhtml" href="text/hellojsworld.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="text.window.xhtml" href="text/window.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.document.xhtml" href="text/document.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.form.xhtml" href="text/form.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.frame.xhtml" href="text/frame.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.history.xhtml" href="text/history.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.location.xhtml" href="text/location.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.navigator.xhtml" href="text/navigator.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.screen.xhtml" href="text/screen.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.other_objects.xhtml" href="text/other_objects.xhtml" media-type="application/xhtml+xml" />
+    <item id="text.XMLHttpRequest.html" href="text/XMLHttpRequest.html" media-type="application/xhtml+xml" />
+    <item id="text.sp_iBooks.html" href="text/sp_iBooks.html" media-type="application/xhtml+xml" />
+    <item id="images.cover.jpg" href="images/cover.jpg" media-type="image/jpeg" />
+    <item id="images.frontispiece01.jpg" href="images/frontispiece01.jpg" media-type="image/jpeg" />
+    <item id="images.frontispiece02.jpg" href="images/frontispiece02.jpg" media-type="image/jpeg" />
+    <item id="style.common.css" href="style/common.css" media-type="text/css" />
+    <item id="javascript.include.js" href="javascript/include.js" media-type="text/javascript" />
+  </manifest>
+  <spine page-progression-direction="default">
+    <itemref idref="text.titlepage.xhtml" linear="yes" />
+    <itemref idref="text.hellojsworld.xhtml" linear="yes" />
+    <itemref idref="text.window.xhtml" linear="yes" />
+    <itemref idref="text.document.xhtml" linear="yes" />
+    <itemref idref="text.form.xhtml" linear="yes" />
+    <itemref idref="text.frame.xhtml" linear="yes" />
+    <itemref idref="text.history.xhtml" linear="yes" />
+    <itemref idref="text.location.xhtml" linear="yes" />
+    <itemref idref="text.navigator.xhtml" linear="yes" />
+    <itemref idref="text.screen.xhtml" linear="yes" />
+    <itemref idref="text.other_objects.xhtml" linear="yes" />
+    <itemref idref="text.XMLHttpRequest.html" linear="yes" />
+    <itemref idref="text.sp_iBooks.html" linear="yes" />
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover Page" href="text/titlepage.xhtml" />
+  </guide>
+</package>

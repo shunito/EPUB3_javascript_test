@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ja" xml:lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link rel="stylesheet" type="text/css" href="../style/common.css" />
+
+        <title>Window Object</title>
+    </head>
+    <body class="frontmatter" epub:type="frontmatter">
+        
+        <section class="preface" epub:type="preface">
+            <h1 id="contentIndex_id_1">Window Object</h1>
+
+<div class="test">
+<h2 id="contentIndex_id_2">typeof</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_4">code</h3>
+<pre>document.getElementById(&quot;r1&quot;).innerHTML = &quot;typeof window : &quot; + typeof window;</pre>
+</div><!-- /code -->
+
+
+<div class="result">
+<h3 id="contentIndex_id_5">result</h3>
+<div id="r1"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+function testWindowObject01(){
+	document.getElementById("r1").innerHTML = "typeof window : " + typeof window;
+}
+//]]>
+</script>
+
+</div><!-- /result -->
+</div><!-- /test -->
+
+
+
+<div class="test">
+<h2 id="contentIndex_id_8">Property</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_9">code</h3>
+<pre>	var obj,
+		target = window,
+		r ='&lt;table class=&quot;objects&quot;&gt;';
+
+	r += '&lt;col class=&quot;title&quot; /&gt;&lt;col class=&quot;type&quot; /&gt;&lt;col class=&quot;note&quot; /&gt;';
+
+	for (var obj in target ) {
+		if( typeof target[obj] !== &quot;function&quot; ) {
+			r += [
+			&quot;&lt;tr&gt;&lt;th&gt;&quot; + obj + &quot;&lt;/th&gt;&quot;,
+			&quot;&lt;td&gt;&quot;, typeof target[obj] , &quot;&lt;/td&gt;&quot;,
+			&quot;&lt;td&gt;&quot;, target[obj], &quot;&lt;/td&gt;&lt;/tr&gt;\n&quot; ].join(&quot;&quot;);
+		}
+	}
+	r +=&quot;&lt;/table&gt;&quot;;
+	document.getElementById(&quot;r2&quot;).innerHTML = r;</pre>
+</div><!-- /code -->
+
+
+<div class="result">
+<h3 id="contentIndex_id_10">result</h3>
+<div id="r2"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+function testWindowObject02(){
+	var obj,
+		target = window,
+		r ='<table class="objects">';
+
+	r += '<col class="title" /><col class="type" /><col class="note" />';
+
+	for (var obj in target ) {
+		if( typeof target[obj] !== "function" ) {
+			r += [
+			"<tr><th>" + obj + "</th>",
+			"<td>", typeof target[obj] , "</td>",
+			"<td>", target[obj], "</td></tr>\n" ].join("");
+		}
+	}
+	r +="</table>";
+	document.getElementById("r2").innerHTML = r;
+}
+//]]>
+</script>
+
+</div><!-- /result -->
+</div><!-- /test -->
+
+<div class="test">
+<h2 id="contentIndex_id_3">Method</h2>
+
+<div class="code">
+<h3 id="contentIndex_id_6">code</h3>
+<pre>	var obj,
+		target = window,
+		r ='&lt;table class=&quot;objects&quot;&gt;';
+
+	r += '&lt;col class=&quot;title&quot; /&gt;&lt;col class=&quot;note&quot; /&gt;';
+	for (var obj in target ) {
+		if( typeof target[obj] === &quot;function&quot; ) {
+			r += [
+			&quot;&lt;tr&gt;&lt;th&gt;&quot; + obj + &quot;&lt;/th&gt;&quot;,
+			&quot;&lt;td&gt;&quot;, typeof target[obj] , &quot;&lt;/td&gt;&lt;/tr&gt;\n&quot; ].join(&quot;&quot;);
+		}
+	}
+	r +=&quot;&lt;/table&gt;&quot;;
+	document.getElementById(&quot;r3&quot;).innerHTML = r;</pre>
+</div><!-- /code -->
+
+<div class="result">
+<h3 id="contentIndex_id_7">result</h3>
+<div id="r3"></div>
+<script type="text/javascript">
+//<![CDATA[
+
+function testWindowObject03(){
+	var obj,
+		target = window,
+		r ='<table class="objects">';
+
+	r += '<col class="title" /><col class="note" />';
+	for (var obj in target ) {
+		if( typeof target[obj] === "function" ) {
+			r += [
+			"<tr><th>" + obj + "</th>",
+			"<td>", typeof target[obj] , "</td></tr>\n" ].join("");
+		}
+	}
+	r +="</table>";
+	document.getElementById("r3").innerHTML = r;
+}
+//]]>
+</script>
+</div><!-- /result -->
+</div><!-- /test -->
+
+        </section>
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.onload = function(){
+	testWindowObject01();
+	testWindowObject02();
+	testWindowObject03();
+}
+//]]>
+</script>        
+    </body>
+</html>
